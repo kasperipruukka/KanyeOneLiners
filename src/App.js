@@ -9,14 +9,26 @@ import QuoteCount from './components/QuoteCount';
 
 function App() {
   return (
-    <div id="wrapper">
-      <Title />
-      <QuoteCount />
-      <Filter />
-      <Quote />
-      <QuoteDelete />
-      <QuoteFetch />
-      <QuoteList />
+    <div id="wrapper" className="flex flex-col container mt-5">
+      <div id="header">
+        <Title />
+      </div>
+      <div className="row">
+        <div className="firstRow">
+          <QuoteFetch />
+          <QuoteDelete />
+        </div>
+        <div className="firstRow">
+          <Filter />
+        </div>
+        <div className="firstRow">
+          <QuoteCount />
+        </div>
+      </div>
+      <div className="row">
+        <QuoteList />
+        <Quote />
+      </div>
     </div>
   );
 }

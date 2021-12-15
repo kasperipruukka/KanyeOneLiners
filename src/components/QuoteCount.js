@@ -1,7 +1,8 @@
 const QuoteCount = () => {
     return(
         <div>
-            <p>Tähän tulee countrer!</p>
+            <p>Total quote count: 2</p>
+            <p>Quotes in view: 2</p>
         </div>
     );
 }

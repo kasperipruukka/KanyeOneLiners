@@ -1,7 +1,7 @@
 const QuoteDelete = () => {
     return(
         <div>
-            <p>Tähän tulee delete!</p>
+            <button className="btn btn-danger">Delete all quotes</button>
         </div>
     );
 }

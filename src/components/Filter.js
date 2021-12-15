@@ -1,7 +1,11 @@
 const Filter = () => {
+    const changeFilter = (e) => {
+        console.log(e.target.value);
+    };
     return(
         <div>
-            <p>Tähän tulee filter!</p>
+            <label htmlFor="filter" className="form-label">Word count filter:</label>
+            <input id="filter" className="form-control text-xl" onChange={changeFilter} type="text" />
         </div>
     );
 }

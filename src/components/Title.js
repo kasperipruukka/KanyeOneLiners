@@ -1,7 +1,7 @@
 const Title = () => {
     return(
-        <div>
-            <p>Tämä on title!</p>
+        <div className="text-center">
+            <h1>Kanye Oneliners</h1>
         </div>
     );
 }

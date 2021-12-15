@@ -1,7 +1,7 @@
 const QuoteList = () => {
     return(
         <div>
-            <p>Tämä on lista!</p>
+            <h3>Quotes</h3>
         </div>
     );
 }
