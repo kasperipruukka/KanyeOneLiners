@@ -1,4 +1,4 @@
-const Count = () => {
+const QuoteCount = () => {
     return(
         <div>
             <p>Tähän tulee countrer!</p>
@@ -6,4 +6,4 @@ const Count = () => {
     );
 }
 
-export default Count;
+export default QuoteCount;
