@@ -1,9 +1,10 @@
 import React from 'react';
+import Title from './components/Title';
 
 function App() {
   return (
-    <div>
-      <p>Testi!</p>
+    <div id="wrapper">
+      <Title />
     </div>
   );
 }
