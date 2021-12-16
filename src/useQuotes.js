@@ -16,11 +16,21 @@ const useQuotes = () => {
         setState({...state, quotes: allQuotes});
     };
 
+    const deleteQuote = (q) => {
+        let unDeletedQuotes = state.quotes.filter((quote) => {
+            return !(
+                q.id === quote.id
+            );
+        });
+        setState({...state, quotes: unDeletedQuotes});
+    }
+
 
 
     return {
         loadQuote,
         saveQuote,
+        deleteQuote,
         quotes: state.quotes,
     };
 }
