@@ -6,8 +6,13 @@ import QuoteDelete from './components/QuoteDelete';
 import QuoteFetch from './components/QuoteFetch';
 import QuoteList from './components/QuoteList';
 import QuoteCount from './components/QuoteCount';
+import useQuotes from "./useQuotes";
 
 function App() {
+  const {testiFunkkari} = useQuotes();
+  
+  testiFunkkari();
+
   return (
     <div id="wrapper" className="flex flex-col container mt-5">
       <div id="header">
