@@ -1,7 +1,7 @@
-const Quote = () => {
+const Quote = ({quote}) => {
     return(
         <div>
-            <p>Tähän tulee yksittäinen quote!</p>
+            <p>{quote}</p>
         </div>
     );
 }
