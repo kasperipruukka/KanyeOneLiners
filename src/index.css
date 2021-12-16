@@ -2,13 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.grayBorder {
-    border: 2px solid #808080b4;
-    border-radius: 5px;
-    padding: 2px;
+.firstRow {
+    width: 33.333333% !important;
     text-align: center;
 }
 
-.firstRow {
-    width: 33.333333% !important;
+.btnMaxWidth {
+    max-width: 200px;
 }

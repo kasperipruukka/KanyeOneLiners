@@ -13,7 +13,7 @@ function App() {
       <div id="header">
         <Title />
       </div>
-      <div className="row">
+      <div className="row mt-5">
         <div className="firstRow">
           <QuoteFetch />
           <QuoteDelete />
@@ -21,11 +21,11 @@ function App() {
         <div className="firstRow">
           <Filter />
         </div>
-        <div className="firstRow">
+        <div className="firstRow flex justify-center items-center">
           <QuoteCount />
         </div>
       </div>
-      <div className="row">
+      <div className="row mt-5 text-center">
         <QuoteList />
         <Quote />
       </div>

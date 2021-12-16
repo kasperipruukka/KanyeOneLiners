@@ -4,7 +4,7 @@ const Filter = () => {
     };
     return(
         <div>
-            <label htmlFor="filter" className="form-label">Word count filter:</label>
+            <label htmlFor="filter" className="form-label text-lg">Word count filter:</label>
             <input id="filter" className="form-control text-xl" onChange={changeFilter} type="text" />
         </div>
     );

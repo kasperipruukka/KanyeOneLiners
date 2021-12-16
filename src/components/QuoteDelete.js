@@ -1,7 +1,7 @@
 const QuoteDelete = () => {
     return(
-        <div>
-            <button className="btn btn-danger">Delete all quotes</button>
+        <div className="w-full">
+            <button className="m-2 btn btn-danger w-3/4 btnMaxWidth">Delete all quotes</button>
         </div>
     );
 }

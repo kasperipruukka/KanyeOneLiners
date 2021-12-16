@@ -1,7 +1,7 @@
 const QuoteFetch = () => {
     return(
-        <div>
-            <button className="btn btn-success">Fetch 1 quote</button>
+        <div className="w-full">
+            <button className="m-2 btn btn-primary w-3/4 btnMaxWidth">Fetch 1 quote</button>
         </div>
     );
 }
