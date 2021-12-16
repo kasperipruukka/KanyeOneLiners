@@ -19,9 +19,9 @@ const QuoteList = () => {
                 <h4>Quotes</h4>
                 <hr />
                 {
-                    quotes.map((quote, index) => {
+                    quotes.map(({id, value}, index) => {
                         return (
-                            <Quote key={quote + '-' + index} quote={quote} />
+                            <Quote key={id + '-' + index} id={id} value={value} />
                         );
                     })
                 }
