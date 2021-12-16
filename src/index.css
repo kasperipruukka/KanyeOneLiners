@@ -10,3 +10,7 @@
 .btnMaxWidth {
     max-width: 200px;
 }
+
+.quoteWidth {
+    max-width: 50% !important;
+}
