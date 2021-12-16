@@ -9,10 +9,6 @@ import QuoteCount from './components/QuoteCount';
 import useQuotes from "./useQuotes";
 
 function App() {
-  const {testiFunkkari} = useQuotes();
-  
-  testiFunkkari();
-
   return (
     <div id="wrapper" className="flex flex-col container mt-5">
       <div id="header">
@@ -30,9 +26,8 @@ function App() {
           <QuoteCount />
         </div>
       </div>
-      <div className="row mt-5 text-center">
+      <div className="row mt-5 text-center justify-center">
         <QuoteList />
-        <Quote />
       </div>
     </div>
   );
