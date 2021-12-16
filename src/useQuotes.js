@@ -12,7 +12,8 @@ const useQuotes = () => {
     };
 
     const saveQuote = (quote) => {
-        let allQuotes = [...state.quotes, quote];
+        let guid = crypto.randomUUID();
+        let allQuotes = [...state.quotes, {id: guid, value: quote}];
         setState({...state, quotes: allQuotes});
     };
 
