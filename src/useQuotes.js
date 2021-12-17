@@ -36,6 +36,7 @@ const useQuotes = () => {
         deleteQuote,
         deleteAllQuotes,
         quotes: state.quotes,
+        totalCount: state.quotes.length,
     };
 }
 
