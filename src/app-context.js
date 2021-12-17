@@ -7,8 +7,7 @@ const AppProvider = ({children}) => {
     const [state, setState] = useState({
         quotes: [],
         filteredQuotes: [],
-        filter: 1,
-        filterWord: '',
+        searchWord: 1,
     });
 
     return (

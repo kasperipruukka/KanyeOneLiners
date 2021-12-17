@@ -2,9 +2,9 @@ import useQuotes from "../useQuotes";
 import Quote from "./Quote";
 
 const QuoteList = () => {
-    const {quotes} = useQuotes();
+    const {filteredQuotes} = useQuotes();
 
-    if (quotes.length < 1) {
+    if (filteredQuotes.length < 1) {
         return (
             <div className="quoteWidth">
                 <h4>Quotes</h4>
@@ -19,7 +19,7 @@ const QuoteList = () => {
                 <h4>Quotes</h4>
                 <hr />
                 {
-                    quotes.map(({id, value}, index) => {
+                    filteredQuotes.map(({id, value}, index) => {
                         return (
                             <Quote key={id + '-' + index} id={id} value={value} />
                         );
