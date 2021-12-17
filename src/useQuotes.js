@@ -24,14 +24,17 @@ const useQuotes = () => {
             );
         });
         setState({...state, quotes: unDeletedQuotes});
+    };
+
+    const deleteAllQuotes = () => {
+        setState({...state, quotes: []});
     }
-
-
 
     return {
         loadQuote,
         saveQuote,
         deleteQuote,
+        deleteAllQuotes,
         quotes: state.quotes,
     };
 }

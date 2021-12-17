@@ -15,21 +15,24 @@
     max-width: 50% !important;
 }
 
-.singleQuote {
-    border: none;
-    color: black;
-    padding: 16px 32px;
-    text-align: center;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition: 0.3s;
+#jumbo {
+    transition: 0.2s;
 }
 
-.singleQuote:hover {
+#quoteContainer #svgBtn:hover~#jumbo {
     background-image: linear-gradient(to right, var(--tw-gradient-stops));
     --tw-gradient-from: #fff;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(255, 0, 0));
     --tw-gradient-stops: var(--tw-gradient-from), rgb(220, 53, 69), var(--tw-gradient-to, rgb(220, 53, 69));
     --tw-gradient-to: #fff;
     color: white;
-  }
+    transition: 0.2s
+}
+
+#svgBtn:hover {
+    cursor: pointer;
+    text-shadow:  5px 5px 5px #000;
+    -webkit-filter: drop-shadow( 0px 1px 1px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow( 0px 1px 2px rgba(0, 0, 0, 0.3));
+    transition: 0.2s
+}
