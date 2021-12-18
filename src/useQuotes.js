@@ -37,7 +37,7 @@ const useQuotes = () => {
     const filterQuotes = () => {
         let matchedQuotes = state.quotes.filter((quote) => {
             let quoteArrayCount = quote.value.split(' ').length;
-            if (parseInt(state.searchWord) === quoteArrayCount) return quote;
+            if (parseInt(state.searchWord) >= quoteArrayCount) return quote;
         });
         setState({...state, filteredQuotes: matchedQuotes});
     };

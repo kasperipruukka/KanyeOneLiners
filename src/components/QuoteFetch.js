@@ -5,7 +5,7 @@ const QuoteFetch = () => {
 
     return(
         <div className="w-full">
-            <button id="fetchQuote" onClick={loadQuote} className="m-2 btn btn-primary w-3/4 btnMaxWidth">Fetch 1 quote</button>
+            <button id="fetchQuote" onClick={loadQuote} className="xs:mb-2 sm:w-11/12 sm:h-full md:w-3/4 btn btn-primary">Fetch 1 quote</button>
         </div>
     );
 }

@@ -9,7 +9,7 @@ const QuoteDelete = () => {
 
     return(
         <div className="w-full">
-            <button onClick={deleteClick} className="m-2 btn btn-danger w-3/4 btnMaxWidth">Delete all quotes</button>
+            <button onClick={deleteClick} className="md:m-2 sm:w-11/12 md:w-3/4 btn btn-danger">Delete all quotes</button>
         </div>
     );
 }

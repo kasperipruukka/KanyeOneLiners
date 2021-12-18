@@ -6,7 +6,7 @@ const QuoteList = () => {
 
     if (filteredQuotes.length < 1) {
         return (
-            <div className="quoteWidth">
+            <div>
                 <h4>Quotes</h4>
                 <hr />
                 <p>No quotes!</p>
@@ -15,7 +15,7 @@ const QuoteList = () => {
     }
     else {
         return(
-            <div className="quoteWidth">
+            <div>
                 <h4>Quotes</h4>
                 <hr />
                 {

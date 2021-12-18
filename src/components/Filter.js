@@ -4,7 +4,7 @@ const Filter = () => {
     const {setSearchWord, searchWord} = useQuotes();
 
     return(
-        <div>
+        <div className="text-center">
             <label htmlFor="filter" className="form-label text-lg">Word count filter:</label>
             <input onChange={(e) => setSearchWord(e.target.value)} id="filter" className="form-control text-xl text-center" type="number" onKeyDown={ (evt) => evt.key === 'e' && evt.preventDefault() } value={searchWord} />
         </div>

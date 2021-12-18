@@ -12,20 +12,22 @@ function App() {
       <div id="header">
         <Title />
       </div>
-      <div className="flex sm:flex-col md:flex-row sm:items-center sm:mt-3 md:mt-5">
-        <div className="sm:w-7/12 md:firstRow sm:text-center sm:flex sm:items-center">
+      <div className="sm:mt-3 md:mt-5 flex sm:flex-col md:flex-row sm:items-center">
+        <div className="sm:w-9/12 md:firstRow sm:text-center xs:flex-col sm:flex sm:items-center">
           <QuoteFetch />
           <QuoteDelete />
         </div>
-        <div className="sm:w-full md:firstRow flex justify-center items-center">
+        <div className="sm:mt-3 sm:w-full md:firstRow flex justify-center items-center">
           <Filter />
         </div>
-        <div className="sm:w-full md:firstRow flex justify-center items-center">
+        <div className="sm:mt-3 sm:w-full md:firstRow flex justify-center items-center">
           <Counter />
         </div>
       </div>
-      <div className="row mt-5 text-center justify-center">
-        <QuoteList />
+      <div className="flex sm:mt-3 md:mt-5 justify-center items-center text-center">
+        <div className="w-2/4">
+          <QuoteList />
+        </div>
       </div>
     </div>
   );
